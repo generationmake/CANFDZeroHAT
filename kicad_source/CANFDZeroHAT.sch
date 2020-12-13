@@ -1,0 +1,163 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MODULE_compute:RASPI-IO CN1
+U 1 1 5FD56DCF
+P 3750 5900
+F 0 "CN1" H 3750 7097 60  0000 C CNN
+F 1 "RASPI-IO" H 3750 6991 60  0000 C CNN
+F 2 "MODULE_compute:RASPI_ZERO_HAT_EDGE" H 3650 6850 60  0001 C CNN
+F 3 "" H 3750 5900 60  0000 C CNN
+	1    3750 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR0101
+U 1 1 5FD58723
+P 2700 4850
+F 0 "#PWR0101" H 2700 4700 50  0001 C CNN
+F 1 "+3V3" H 2715 5023 50  0000 C CNN
+F 2 "" H 2700 4850 50  0000 C CNN
+F 3 "" H 2700 4850 50  0000 C CNN
+	1    2700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR0102
+U 1 1 5FD59BC3
+P 2800 6950
+F 0 "#PWR0102" H 2800 6700 50  0001 C CNN
+F 1 "GND" H 2805 6777 50  0000 C CNN
+F 2 "" H 2800 6950 50  0000 C CNN
+F 3 "" H 2800 6950 50  0000 C CNN
+	1    2800 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR0103
+U 1 1 5FD5AD1E
+P 4700 6950
+F 0 "#PWR0103" H 4700 6700 50  0001 C CNN
+F 1 "GND" H 4705 6777 50  0000 C CNN
+F 2 "" H 4700 6950 50  0000 C CNN
+F 3 "" H 4700 6950 50  0000 C CNN
+	1    4700 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+5V #PWR0104
+U 1 1 5FD5B845
+P 4800 4850
+F 0 "#PWR0104" H 4800 4700 50  0001 C CNN
+F 1 "+5V" H 4815 5023 50  0000 C CNN
+F 2 "" H 4800 4850 50  0000 C CNN
+F 3 "" H 4800 4850 50  0000 C CNN
+	1    4800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5050 4800 5050
+Wire Wire Line
+	4800 4850 4800 4950
+Connection ~ 4800 4950
+Wire Wire Line
+	4800 4950 4800 5050
+Wire Wire Line
+	4600 4950 4800 4950
+Wire Wire Line
+	4600 5150 4700 5150
+Wire Wire Line
+	4700 5150 4700 5550
+Wire Wire Line
+	4600 6550 4700 6550
+Connection ~ 4700 6550
+Wire Wire Line
+	4700 6550 4700 6950
+Wire Wire Line
+	4600 6350 4700 6350
+Connection ~ 4700 6350
+Wire Wire Line
+	4700 6350 4700 6550
+Wire Wire Line
+	4600 5850 4700 5850
+Connection ~ 4700 5850
+Wire Wire Line
+	4700 5850 4700 6350
+Wire Wire Line
+	4600 5550 4700 5550
+Connection ~ 4700 5550
+Wire Wire Line
+	4700 5550 4700 5850
+Wire Wire Line
+	2900 5750 2700 5750
+Wire Wire Line
+	2700 5750 2700 4950
+Wire Wire Line
+	2900 4950 2700 4950
+Connection ~ 2700 4950
+Wire Wire Line
+	2700 4950 2700 4850
+Wire Wire Line
+	2900 5350 2800 5350
+Wire Wire Line
+	2800 5350 2800 6150
+Wire Wire Line
+	2900 6850 2800 6850
+Connection ~ 2800 6850
+Wire Wire Line
+	2800 6850 2800 6950
+Wire Wire Line
+	2900 6150 2800 6150
+Connection ~ 2800 6150
+Wire Wire Line
+	2800 6150 2800 6850
+Wire Wire Line
+	2000 5050 2900 5050
+Wire Wire Line
+	2000 5150 2900 5150
+Wire Wire Line
+	5500 5250 4600 5250
+Wire Wire Line
+	5500 5350 4600 5350
+Wire Wire Line
+	2000 5850 2900 5850
+Wire Wire Line
+	2000 5950 2900 5950
+Wire Wire Line
+	2000 6050 2900 6050
+Text Label 2100 5050 0    50   ~ 0
+I2C_SDA
+Text Label 2100 5150 0    50   ~ 0
+I2C_SCL
+Text Label 4800 5350 0    50   ~ 0
+SERIAL_RX
+Text Label 4800 5250 0    50   ~ 0
+SERIAL_TX
+Text Label 2100 5850 0    50   ~ 0
+SPI_MOSI
+Text Label 2100 5950 0    50   ~ 0
+SPI_MISO
+Text Label 2100 6050 0    50   ~ 0
+SPI_CLK
+Wire Wire Line
+	5500 6050 4600 6050
+Wire Wire Line
+	5500 6150 4600 6150
+Text Label 4800 6050 0    50   ~ 0
+SPI_CE0
+Text Label 4800 6150 0    50   ~ 0
+SPI_CE1
+$EndSCHEMATC
