@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/bernhard/projects/CANFDZeroHAT/kicad_source/CANFDZeroHAT.sch)
-    (date "Sa 02 Jan 2021 09:43:32 CET")
+    (date "Sa 02 Jan 2021 09:45:39 CET")
     (tool "Eeschema 5.1.9-73d0e3b20d~88~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -167,6 +167,7 @@
       (tstamp 5FF07EC2))
     (comp (ref D2)
       (value 150060GS75000)
+      (footprint LEDs:LED_0603)
       (libsource (lib devices) (part Led_Small) (description Led))
       (sheetpath (names /) (tstamps /))
       (tstamp 5FF1A54D))
@@ -178,6 +179,7 @@
       (tstamp 5FF1C600))
     (comp (ref D3)
       (value 150060RS75000)
+      (footprint LEDs:LED_0603)
       (libsource (lib devices) (part Led_Small) (description Led))
       (sheetpath (names /) (tstamps /))
       (tstamp 5FF1E649))
@@ -189,6 +191,7 @@
       (tstamp 5FF1E7A3))
     (comp (ref D4)
       (value 150060YS75000)
+      (footprint LEDs:LED_0603)
       (libsource (lib devices) (part Led_Small) (description Led))
       (sheetpath (names /) (tstamps /))
       (tstamp 5FF239FB))
