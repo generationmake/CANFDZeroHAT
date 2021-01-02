@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CANFDZeroHAT"
-Date "2020-12-20"
-Rev "0.1"
+Date "2021-01-02"
+Rev "0.2"
 Comp "generationmake"
 Comment1 ""
 Comment2 ""
@@ -638,14 +638,14 @@ CAN out
 $Comp
 L devices:D_Schottky_Small D?
 U 1 1 5FD7527E
-P 9300 3400
+P 10200 3400
 AR Path="/5FD58A5B/5FD7527E" Ref="D?"  Part="1" 
 AR Path="/5FD7527E" Ref="D1"  Part="1" 
-F 0 "D1" H 9300 3605 50  0000 C CNN
-F 1 "DNI" H 9300 3514 50  0000 C CNN
-F 2 "diodes:SOD-123" V 9300 3400 50  0001 C CNN
-F 3 "" V 9300 3400 50  0000 C CNN
-	1    9300 3400
+F 0 "D1" H 10200 3605 50  0000 C CNN
+F 1 "DNI" H 10200 3514 50  0000 C CNN
+F 2 "diodes:SOD-123" V 10200 3400 50  0001 C CNN
+F 3 "" V 10200 3400 50  0000 C CNN
+	1    10200 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -662,17 +662,13 @@ F 3 "" H 9050 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10100 3400 9400 3400
-Wire Wire Line
-	9200 3400 9050 3400
-Wire Wire Line
 	9050 3400 9050 3350
 Text Label 9200 2250 0    50   ~ 0
 CANVCC
 Text Label 9200 1300 0    50   ~ 0
 CANVCC
-Text Label 9650 3400 0    50   ~ 0
-CANVCC
+Text Label 9700 3400 0    50   ~ 0
+CANVCC_F
 Wire Wire Line
 	9050 2250 9900 2250
 Wire Wire Line
@@ -940,4 +936,148 @@ Wire Wire Line
 	3700 1900 3700 2300
 Wire Wire Line
 	3000 2100 3000 2300
+$Comp
+L devices:F_Small F1
+U 1 1 5FF07EC2
+P 9400 3400
+F 0 "F1" H 9400 3585 50  0000 C CNN
+F 1 "0ZCM0020FF2G" H 9400 3494 50  0000 C CNN
+F 2 "resistors:R_0603" H 9400 3400 50  0001 C CNN
+F 3 "" H 9400 3400 50  0000 C CNN
+	1    9400 3400
+	1    0    0    -1  
+$EndComp
+Text Label 10450 3400 0    50   ~ 0
+CANVCC
+Text Notes 9050 3550 0    50   ~ 0
+polyfuse 200 mA
+Wire Wire Line
+	9050 3400 9300 3400
+Wire Wire Line
+	9500 3400 10100 3400
+Wire Wire Line
+	11000 3400 10300 3400
+$Comp
+L devices:Led_Small D2
+U 1 1 5FF1A54D
+P 6200 3300
+F 0 "D2" H 6200 3095 50  0000 C CNN
+F 1 "150060GS75000" H 6200 3186 50  0000 C CNN
+F 2 "" V 6200 3300 50  0000 C CNN
+F 3 "" V 6200 3300 50  0000 C CNN
+	1    6200 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L devices:R_0603 R?
+U 1 1 5FF1C600
+P 5650 3300
+AR Path="/5FD58A5B/5FF1C600" Ref="R?"  Part="1" 
+AR Path="/5FF1C600" Ref="R10"  Part="1" 
+F 0 "R10" H 5709 3346 50  0000 L CNN
+F 1 "1k" H 5709 3255 50  0000 L CNN
+F 2 "resistors:R_0603" H 5650 3150 50  0001 C CNN
+F 3 "" H 5650 3300 50  0000 C CNN
+	1    5650 3300
+	0    -1   -1   0   
+$EndComp
+Text Notes 6700 3300 0    50   ~ 0
+green
+$Comp
+L devices:Led_Small D3
+U 1 1 5FF1E649
+P 6200 3650
+F 0 "D3" H 6200 3445 50  0000 C CNN
+F 1 "150060RS75000" H 6200 3536 50  0000 C CNN
+F 2 "" V 6200 3650 50  0000 C CNN
+F 3 "" V 6200 3650 50  0000 C CNN
+	1    6200 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L devices:R_0603 R?
+U 1 1 5FF1E7A3
+P 5650 3650
+AR Path="/5FD58A5B/5FF1E7A3" Ref="R?"  Part="1" 
+AR Path="/5FF1E7A3" Ref="R11"  Part="1" 
+F 0 "R11" H 5709 3696 50  0000 L CNN
+F 1 "1k" H 5709 3605 50  0000 L CNN
+F 2 "resistors:R_0603" H 5650 3500 50  0001 C CNN
+F 3 "" H 5650 3650 50  0000 C CNN
+	1    5650 3650
+	0    -1   -1   0   
+$EndComp
+Text Notes 6700 3650 0    50   ~ 0
+red
+$Comp
+L devices:Led_Small D4
+U 1 1 5FF239FB
+P 6200 4000
+F 0 "D4" H 6200 3795 50  0000 C CNN
+F 1 "150060YS75000" H 6200 3886 50  0000 C CNN
+F 2 "" V 6200 4000 50  0000 C CNN
+F 3 "" V 6200 4000 50  0000 C CNN
+	1    6200 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L devices:R_0603 R?
+U 1 1 5FF23B7B
+P 5650 4000
+AR Path="/5FD58A5B/5FF23B7B" Ref="R?"  Part="1" 
+AR Path="/5FF23B7B" Ref="R12"  Part="1" 
+F 0 "R12" H 5709 4046 50  0000 L CNN
+F 1 "2k" H 5709 3955 50  0000 L CNN
+F 2 "resistors:R_0603" H 5650 3850 50  0001 C CNN
+F 3 "" H 5650 4000 50  0000 C CNN
+	1    5650 4000
+	0    -1   -1   0   
+$EndComp
+Text Notes 6700 4000 0    50   ~ 0
+yellow
+$Comp
+L power-supply:GND #PWR?
+U 1 1 5FF295E3
+P 6600 4100
+AR Path="/5FD58A5B/5FF295E3" Ref="#PWR?"  Part="1" 
+AR Path="/5FF295E3" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 6600 3850 50  0001 C CNN
+F 1 "GND" H 6605 3927 50  0000 C CNN
+F 2 "" H 6600 4100 50  0000 C CNN
+F 3 "" H 6600 4100 50  0000 C CNN
+	1    6600 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3300 6600 3300
+Wire Wire Line
+	6600 3300 6600 3650
+Wire Wire Line
+	5050 3300 5550 3300
+Wire Wire Line
+	5050 3650 5550 3650
+Wire Wire Line
+	5050 4000 5550 4000
+Wire Wire Line
+	5750 3300 6100 3300
+Wire Wire Line
+	5750 3650 6100 3650
+Wire Wire Line
+	5750 4000 6100 4000
+Wire Wire Line
+	6300 3650 6600 3650
+Connection ~ 6600 3650
+Wire Wire Line
+	6600 3650 6600 4000
+Wire Wire Line
+	6300 4000 6600 4000
+Connection ~ 6600 4000
+Wire Wire Line
+	6600 4000 6600 4100
+Text Label 5100 3650 0    50   ~ 0
+CAN_TX
+Text Label 5100 3300 0    50   ~ 0
+CAN_RX
+Text Label 5100 4000 0    50   ~ 0
+CANVCC
 $EndSCHEMATC
