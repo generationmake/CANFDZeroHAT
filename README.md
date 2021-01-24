@@ -62,3 +62,7 @@ CANVCC can be connected to the Raspberry Pi via diode D1 as desribed in the dron
 
  * http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2517FD-External-CAN-FD-Controller-with-SPI-Interface-20005688B.pdf
  * https://ww1.microchip.com/downloads/en/DeviceDoc/External-CAN-FD-Controller-with-SPI-Interface-DS20006027B.pdf
+
+## License
+
+This hardware is licensed under the CERN OHL v. 1.2

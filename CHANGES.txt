@@ -1,0 +1,7 @@
+CANFDZeroHAT - Raspberry Pi HAT with Microchip MCP2517FD or MCP2518FD CAN FD controller
+see full project documentation at https://github.com/generationmake/CANFDZeroHAT
+
+changes
+
+version 0.1 - 2020-12-21
+* prototype release
