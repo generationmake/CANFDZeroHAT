@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/bernhard/projects/CANFDZeroHAT/kicad_source/CANFDZeroHAT.sch)
-    (date "Mo 25 Jan 2021 22:59:18 CET")
+    (date "Mo 25 Jan 2021 23:22:38 CET")
     (tool "Eeschema 5.1.9-73d0e3b20d~88~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -34,7 +34,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5FD7519A))
     (comp (ref Y1)
-      (value RH100-20.000-20-3030-TR)
+      (value RH100-40.000-18-F-2050-TR)
       (footprint crystals:Crystal_SMD_3.2x2.5mm_4Pad)
       (libsource (lib devices) (part Crystal_SMD_4Pad) (description "Quarz, Crystal SMD 4 Pads"))
       (sheetpath (names /) (tstamps /))
