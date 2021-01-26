@@ -166,6 +166,25 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# devices_F_Small
+#
+DEF devices_F_Small F 0 10 N N 1 F N
+F0 "F" -40 60 50 H V L CNN
+F1 "devices_F_Small" -120 -60 50 H V L CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ CP*
+ SM*
+$ENDFPLIST
+DRAW
+S -50 20 50 -20 0 1 0 N
+P 2 0 1 0 -50 0 50 0 N
+X ~ 1 -100 0 50 R 40 40 1 1 P
+X ~ 2 100 0 50 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
 # devices_Label
 #
 DEF devices_Label L 0 40 Y Y 1 F N
@@ -175,6 +194,27 @@ F2 "" -100 100 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
 S -200 150 200 -150 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# devices_Led_Small
+#
+DEF devices_Led_Small D 0 10 N N 1 F N
+F0 "D" -50 125 50 H V L CNN
+F1 "devices_Led_Small" -175 -100 50 H V L CNN
+F2 "" 0 0 50 V V C CNN
+F3 "" 0 0 50 V V C CNN
+$FPLIST
+ CP*
+ SM*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 F
+P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
+P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
+X K 1 -100 0 70 R 40 40 1 1 P
+X A 2 100 0 70 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
