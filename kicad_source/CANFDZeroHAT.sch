@@ -966,7 +966,7 @@ F 1 "150060GS75000" H 6200 3186 50  0000 C CNN
 F 2 "LEDs:LED_0603" V 6200 3300 50  0001 C CNN
 F 3 "" V 6200 3300 50  0000 C CNN
 	1    6200 3300
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 $Comp
 L devices:R_0603 R?
@@ -992,7 +992,7 @@ F 1 "150060RS75000" H 6200 3536 50  0000 C CNN
 F 2 "LEDs:LED_0603" V 6200 3650 50  0001 C CNN
 F 3 "" V 6200 3650 50  0000 C CNN
 	1    6200 3650
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 $Comp
 L devices:R_0603 R?
@@ -1066,12 +1066,8 @@ Wire Wire Line
 	5750 4000 6100 4000
 Wire Wire Line
 	6300 3650 6600 3650
-Connection ~ 6600 3650
-Wire Wire Line
-	6600 3650 6600 4000
 Wire Wire Line
 	6300 4000 6600 4000
-Connection ~ 6600 4000
 Wire Wire Line
 	6600 4000 6600 4100
 Text Label 5100 3650 0    50   ~ 0
@@ -1080,4 +1076,20 @@ Text Label 5100 3300 0    50   ~ 0
 CAN_RX
 Text Label 5100 4000 0    50   ~ 0
 CANVCC
+$Comp
+L power-supply:+3V3 #PWR?
+U 1 1 600FB023
+P 6600 3250
+AR Path="/5FD58A5B/600FB023" Ref="#PWR?"  Part="1" 
+AR Path="/600FB023" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6600 3100 50  0001 C CNN
+F 1 "+3V3" H 6615 3423 50  0000 C CNN
+F 2 "" H 6600 3250 50  0000 C CNN
+F 3 "" H 6600 3250 50  0000 C CNN
+	1    6600 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3300 6600 3250
+Connection ~ 6600 3300
 $EndSCHEMATC
