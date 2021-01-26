@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CANFDZeroHAT"
-Date "2021-01-02"
+Date "2021-01-26"
 Rev "0.2"
 Comp "generationmake"
 Comment1 ""
@@ -1081,8 +1081,8 @@ L power-supply:+3V3 #PWR?
 U 1 1 600FB023
 P 6600 3250
 AR Path="/5FD58A5B/600FB023" Ref="#PWR?"  Part="1" 
-AR Path="/600FB023" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6600 3100 50  0001 C CNN
+AR Path="/600FB023" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 6600 3100 50  0001 C CNN
 F 1 "+3V3" H 6615 3423 50  0000 C CNN
 F 2 "" H 6600 3250 50  0000 C CNN
 F 3 "" H 6600 3250 50  0000 C CNN
@@ -1092,4 +1092,19 @@ $EndComp
 Wire Wire Line
 	6600 3300 6600 3250
 Connection ~ 6600 3300
+$Comp
+L devices:Label L?
+U 1 1 60100FB3
+P 700 7600
+AR Path="/5FD58A5B/60100FB3" Ref="L?"  Part="1" 
+AR Path="/60100FB3" Ref="L3"  Part="1" 
+F 0 "L3" H 928 7706 60  0000 L CNN
+F 1 "Label" H 928 7600 60  0000 L CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 928 7494 60  0000 L CNN
+F 3 "" H 700 7600 60  0000 C CNN
+	1    700  7600
+	1    0    0    -1  
+$EndComp
+Text Notes 500  600  0    50   ~ 0
+find the full project documentation at https://github.com/generationmake/CANFDZeroHAT
 $EndSCHEMATC
