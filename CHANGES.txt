@@ -5,3 +5,8 @@ changes
 
 version 0.1 - 2020-12-21
 * prototype release
+
+version 0.2 - 2021-01-26
+* added fuse and debug leds
+* corrected footprint of CAN transceiver
+* updated to 40 MHz crystal 
