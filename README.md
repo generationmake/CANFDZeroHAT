@@ -3,13 +3,17 @@ Raspberry Pi HAT with Microchip MCP2517FD or MCP2518FD CAN FD controller
 
 ![CANFDZeroHAT rendering](docs/images/CANFDZeroHAT_rendering.png)
 
-The board uses a 20 MHz crystal.
+The board uses a 40 MHz crystal. This is the default crystal for the linux module. The first prototypes used a 20 MHz crystal.
 
 The controller can be connected to SPI0 CE0 or CE1 by populating different resistor jumpers. Also different GPIOs can be used as interrupt.
 
 ## setup
 
 edit `/boot/config.txt` and add line:
+
+`dtoverlay=mcp251xfd,spi0-0,interrupt=25`
+
+If you use a crstal different to 40 MHz you have to specify the frequency:
 
 `dtoverlay=mcp251xfd,spi0-0,oscillator=20000000,interrupt=25`
 
