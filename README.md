@@ -13,7 +13,7 @@ edit `/boot/config.txt` and add line:
 
 `dtoverlay=mcp251xfd,spi0-0,interrupt=25`
 
-If you use a crstal different to 40 MHz you have to specify the frequency:
+If you use a crystal different to 40 MHz you have to specify the frequency:
 
 `dtoverlay=mcp251xfd,spi0-0,oscillator=20000000,interrupt=25`
 
