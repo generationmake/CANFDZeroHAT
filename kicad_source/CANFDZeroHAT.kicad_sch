@@ -6,7 +6,7 @@
 
   (title_block
     (title "CANFDZeroHAT")
-    (date "2023-08-24")
+    (date "2023-08-27")
     (rev "0.3")
     (company "generationmake")
   )
@@ -3137,6 +3137,23 @@
     (pin "2" (uuid f3406d66-5eb4-4418-b061-8b9cfa56a717))
   )
 
+  (symbol (lib_id "generationmake:Label") (at 175.26 160.02 0) (unit 1)
+    (in_bom no) (on_board yes)
+    (uuid c90de6ec-8b1e-4482-a692-291e6d522cdb)
+    (property "Reference" "L4" (id 0) (at 181.0512 157.3276 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Value" "Label" (id 1) (at 181.0512 160.02 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Footprint" "generationmake:opencyphal_small" (id 2) (at 181.0512 162.7124 0)
+      (effects (font (size 1.524 1.524)) (justify left))
+    )
+    (property "Datasheet" "" (id 3) (at 175.26 160.02 0)
+      (effects (font (size 1.524 1.524)))
+    )
+  )
+
   (symbol (lib_id "Switch:SW_DPDT_x2") (at 153.67 73.66 0) (unit 2)
     (in_bom yes) (on_board yes)
     (uuid f437b9e5-0b9b-4ce1-adf8-fe89c946037e)
@@ -3286,6 +3303,9 @@
     )
     (path "/00000000-0000-0000-0000-000060100fb3"
       (reference "L3") (unit 1) (value "Label") (footprint "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen")
+    )
+    (path "/c90de6ec-8b1e-4482-a692-291e6d522cdb"
+      (reference "L4") (unit 1) (value "Label") (footprint "generationmake:opencyphal_small")
     )
     (path "/00000000-0000-0000-0000-00005fd836f1"
       (reference "R1") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0603_1608Metric")
