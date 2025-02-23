@@ -1805,6 +1805,7 @@
   (footprint "MODULE_compute:RASPI_ZERO_HAT_EDGE" locked (layer "F.Cu")
     (tedit 5FD57A75) (tstamp 00000000-0000-0000-0000-00005fdc0d8a)
     (at 140 90)
+    (property "LCSC" "C50982")
     (property "Sheetfile" "CANFDZeroHAT.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-00005fd56dcf")
