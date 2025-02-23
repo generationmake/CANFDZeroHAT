@@ -482,7 +482,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../CANFDZeroHAT.step",
       "svg": "",
       "vrml": ""
     },
