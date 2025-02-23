@@ -5881,7 +5881,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MODULE_compute:RASPI_ZERO_HAT_EDGE"
+		(property "Footprint" "generationmake:RASPI_ZERO_HAT_EDGE"
 			(at 92.71 125.73 0)
 			(effects
 				(font
@@ -8217,7 +8217,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "labels:generationmake_small_solder"
+		(property "Footprint" "generationmake:generationmake_small_solder"
 			(at 240.7412 153.8224 0)
 			(effects
 				(font
@@ -8279,7 +8279,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "labels:generationmake_logo"
+		(property "Footprint" "generationmake:generationmake_logo"
 			(at 240.7412 162.7124 0)
 			(effects
 				(font
